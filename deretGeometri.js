@@ -1,5 +1,13 @@
 function tentukanDeretGeometri(arr) {
-  // you can only write your code here!
+  var isGeometri = true;
+  var difference = arr[1] / arr[0];
+
+  for (var i = 0; i < arr.length - 1 && isGeometri; i++) {
+    if (difference !== arr[i + 1] / arr[i]) {
+      isGeometri = false;
+    }
+  }
+  return isGeometri;
 }
 
 // TEST CASES
