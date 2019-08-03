@@ -1,7 +1,6 @@
 function tentukanDeretAritmatika(arr) {
   var isAritmatik = true;
   var difference = Math.abs(arr[0] - arr[1]);
-  difference;
 
   for (var i = 0; i < arr.length - 1 && isAritmatik; i++) {
     if (difference !== Math.abs(arr[i] - arr[i + 1])) {
