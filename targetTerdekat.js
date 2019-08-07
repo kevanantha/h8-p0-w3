@@ -12,15 +12,13 @@ function targetTerdekat(arr) {
     result.push(Math.abs(x[i] - o[0]))
   }
 
-  var a = result[0]
+  var sorted = result[0]
   for (var i = 0; i < result.length; i++) {
-    if (result[i] < a) {
-      a = result[i]
-    }
+    if (result[i] < sorted) sorted = result[i]
   }
 
   if (!x.length) return 0
-  return a
+  return sorted
 }
 
 // TEST CASES
